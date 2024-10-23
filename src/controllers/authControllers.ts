@@ -57,7 +57,8 @@ export const login = asyncHandler(
       if (err instanceof z.ZodError) {
         return res.status(400).json({ errors: err.errors });
       }
-      return res.status(500).json({ error: "Server error" });
+      console.log(err);
+      return res.status(500).json({ error: err });
     }
   }
 );
