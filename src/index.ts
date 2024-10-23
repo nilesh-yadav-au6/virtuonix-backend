@@ -16,7 +16,7 @@ app.use(
     credentials: true,
   })
 );
-app.use(cookieParser("MY SECRET"));
+app.use(cookieParser(process.env.COOKIE_SECRET));
 app.use(express.json());
 
 mongoose
