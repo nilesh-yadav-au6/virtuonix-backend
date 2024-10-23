@@ -12,7 +12,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL, // Replace with your frontend URL
+    origin: "https://virtuonix-frontend.onrender.com", // Replace with your frontend URL
     credentials: true,
   })
 );
